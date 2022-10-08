@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 /**
  *Main - to run the monty program

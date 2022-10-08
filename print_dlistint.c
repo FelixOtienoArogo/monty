@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "main.h"
+#include "monty.h"
 /**
  *print_dlistint - prints the elements of a distinct_t list
  *

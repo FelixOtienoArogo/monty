@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 /**
  *_strcmp - to compare the opcode to the string
