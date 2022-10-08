@@ -1,7 +1,10 @@
 #include "monty.h"
 
 /**
- *Main - to run the monty program
+ *main - to run the monty program
+ *
+ *@argc: number of arguments
+ *@argv: arguments
  *
  *Return: Always zero
  */

@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- *push: function to push an element to the stack
+ *push - function to push an element to the stack
  *
  *@num: the integer to be pushed
- *@stack: the stack
+ *@head: the stack
  *@line_number: the line number
  *
  *Return: nothing
