@@ -22,7 +22,8 @@ if (_strcmp("push", string[i]))
 {
 push(&stack, line, string[i]);
 }
-else if(_strcmp("nop", string[i]));
+else if (_strcmp("nop", string[i]))
+;
 else
 {
 j = 0;
