@@ -20,7 +20,6 @@ instruction_t st[] = {
 {"div", divi},
 {"null", NULL}
 };
-
 for (line = 1, i = 0; string[i + 1]; i++, line++)
 {
 if (_strcmp("push", string[i]))
@@ -32,7 +31,6 @@ else if (_strcmp("nop", string[i]))
 else
 {
 j = 0;
-
 while (!_strcmp(st[j].opcode, "null"))
 {
 if (_strcmp(st[j].opcode, string[i]))
