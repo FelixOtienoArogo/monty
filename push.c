@@ -13,9 +13,22 @@
 void push(stack_t **head, unsigned int line_number, char *num)
 {
 stack_t *new, *h = *head;
-int dig;
+int dig, i = 0;
+char *temp;
 strtok(num, " ");
-dig = atoi(strtok(NULL, " "));
+temp = strtok(NULL, " ");
+
+while (temp[i] != '\n')
+{
+if ((temp[i] >= '0' && temp[i] <= '9') || temp[i] == ' ')
+i++;
+else
+{
+fprintf(stderr, "L%d: usage: push integer\n", line_number);
+exit(EXIT_FAILURE);
+}
+}
+dig = atoi(temp);
 
 if (head == NULL)
 {
