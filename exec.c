@@ -15,6 +15,7 @@ instruction_t st[] = {
 {"pint", pint},
 {"pop", pop},
 {"swap", swap},
+{"add", add},
 {"null", NULL}
 };
 
