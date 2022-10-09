@@ -10,7 +10,10 @@
 void exec(char *string[], stack_t *stack)
 {
 int line, i, j;
-instruction_t st[] = {{"pall", pall}};
+instruction_t st[] = {
+{"pall", pall},
+{"null", NULL}
+};
 
 for (line = 1, i = 0; string[i + 1]; i ++, line++)
 {
@@ -29,6 +32,12 @@ if (_strcmp(st[j].opcode, string[i]))
 st[0].f(&stack, line);
 break;
 }
+j++;
+}
+if (_strcmp(st[j].opcode, "null") && !_strcmp(string[i], "\n"))
+{
+fprintf(stderr, "L%u: unknown intrustruction %s\n", line, string[i]);
+exit(EXIT_FAILURE);
 }
 }
 }
