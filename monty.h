@@ -50,5 +50,6 @@ int _strcmp(char *opcode, char *string);
 void pint(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t *head);
 void free_list(char *a[]);
+void pop(stack_t **stack, unsigned int line_num);
 
 #endif

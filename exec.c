@@ -13,6 +13,7 @@ int line, i, j;
 instruction_t st[] = {
 {"pall", pall},
 {"pint", pint},
+{"pop", pop},
 {"null", NULL}
 };
 
