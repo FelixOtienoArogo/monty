@@ -9,13 +9,11 @@
  */
 void pint(stack_t **stack, unsigned int line_number)
 {
-stack_t *head = *stack;
 if (*stack == NULL)
 {
 fprintf(stderr, "%u: can't pint, stack empty\n", line_number);
 exit(EXIT_FAILURE);
 }
 
-while(head)
-printf("%d\n", head->n);
+printf("%d\n", (*stack)->n);
 }

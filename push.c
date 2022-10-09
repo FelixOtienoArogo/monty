@@ -12,7 +12,7 @@
 
 void push(stack_t **head, unsigned int line_number, char *num)
 {
-stack_t *new;
+stack_t *new, *h = *head;
 int dig;
 strtok(num, " ");
 dig = atoi(strtok(NULL, " "));
@@ -32,7 +32,7 @@ exit(EXIT_FAILURE);
 new->prev = NULL;
 new->n = dig;
 new->next = *head;
-if ((*head) != NULL)
-(*head)->prev = new;
+if (*head)
+h->prev = new;
 *head = new;
 }

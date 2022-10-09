@@ -13,10 +13,10 @@ int main(int argc, char **argv)
 FILE *file;
 stack_t *stack = NULL;
 int i = 0;
-static char *string[1500] = {NULL};
-size_t size = 1500;
+static char *string[1000] = {NULL};
+size_t size = 1000;
 
-if (argc != 2 && argv)
+if (argc != 2)
 {
 fprintf(stderr, "USAGE: monty file\n");
 exit(EXIT_FAILURE);
