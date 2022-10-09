@@ -44,4 +44,5 @@ exit(EXIT_FAILURE);
 }
 }
 }
+free_stack(stack);
 }

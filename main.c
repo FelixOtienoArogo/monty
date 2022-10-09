@@ -33,6 +33,6 @@ for (i = 0; getline(&(string[i]), &size, file) > 0; i++)
 
 exec(string, stack);
 fclose(file);
-free(stack);
+free_list(string);
 return (0);
 }
