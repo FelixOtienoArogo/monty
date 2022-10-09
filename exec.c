@@ -42,7 +42,7 @@ j++;
 }
 if (_strcmp(st[j].opcode, "null") && !_strcmp(string[i], "\n"))
 {
-fprintf(stderr, "L%u: unknown intrustruction %s", line, string[i]);
+fprintf(stderr, "L%u: unknown instruction %s", line, string[i]);
 exit(EXIT_FAILURE);
 }
 }
