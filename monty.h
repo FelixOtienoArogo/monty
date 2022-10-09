@@ -47,5 +47,6 @@ void push(stack_t **stack, unsigned int line_number, char *num);
 void exec(char *string[], stack_t *stack);
 size_t print_dlistint(const stack_t *h);
 int _strcmp(char *opcode, char *string);
+void pint(stack_t **stack, unsigned int line_number);
 
 #endif

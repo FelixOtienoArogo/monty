@@ -12,6 +12,7 @@ void exec(char *string[], stack_t *stack)
 int line, i, j;
 instruction_t st[] = {
 {"pall", pall},
+{"pint", pint},
 {"null", NULL}
 };
 

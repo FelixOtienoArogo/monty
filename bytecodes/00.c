@@ -1,5 +1,5 @@
 push 1
-pal
+pall
 push 123a
 pall
 push 3
